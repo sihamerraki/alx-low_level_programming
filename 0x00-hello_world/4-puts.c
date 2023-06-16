@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- *main
+ * main is entry poi,t of program
+ * it print and returns 0
  */
 int main(void)
 {
