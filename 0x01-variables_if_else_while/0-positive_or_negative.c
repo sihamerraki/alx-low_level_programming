@@ -7,7 +7,6 @@
  *
  * return: 0  if success
  */
-
 int main(void)
 {
 	int n;
@@ -23,7 +22,7 @@ int main(void)
 	}
 	else 
 	{
-		printf("%d is zero\n, n");
+		printf("%d is zero\n", n);
 	}
 	return(0);
 
