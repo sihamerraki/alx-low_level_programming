@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- * main is entry poi,t of program
- * it print and returns 0
+ * main is entry point of program
+ * 
+ * return: always 0
+ *
  */
 int main(void)
 {
