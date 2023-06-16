@@ -1,6 +1,6 @@
-#include<stdlib.h>
-#include<time.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
  * main- define if a number positive , negative or zero.
@@ -25,5 +25,4 @@ int main(void)
 		printf("%d is zero\n", n);
 	}
 	return(0);
-
 }
