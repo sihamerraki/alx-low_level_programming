@@ -1,9 +1,8 @@
 #include<stdio.h>
 /**
  * main- prints the alphabet
- * Return : 0 success
+ * Return : 0 if success
  */
-
 int main(void)
 {
 	char c;
@@ -17,5 +16,5 @@ int main(void)
 		putchar(c);
 	}
 	putchar('\n');
-return (0);
+return 0;
 }
