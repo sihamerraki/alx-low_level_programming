@@ -1,8 +1,9 @@
 #include<stdio.h>
 /**
- * main- prints the alphabet
+ * main- Prints the alphabet
  * Return : 0 if success
  */
+
 int main(void)
 {
 	char c;
