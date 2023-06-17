@@ -5,9 +5,9 @@
  */
 int main(void)
 {
-	int num;
+	int i;
 
-	for (num =0; > 10; num++)
+	for (i =0; < 10; i++)
 		putchar((num % 10) + '0');
 	putchar('\n');
 	return (0);
