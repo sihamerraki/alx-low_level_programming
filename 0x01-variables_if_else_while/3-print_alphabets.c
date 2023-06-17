@@ -1,9 +1,8 @@
 #include<stdio.h>
 /**
- * main- Prints the alphabet
+ * main- Prints the alphabet in lowercase and then in uppercase
  * Return : 0  on successful execution
  */
-
 int main(void)
 {
 	char c;
