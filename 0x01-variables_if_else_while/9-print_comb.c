@@ -7,7 +7,6 @@
 int main(void)
 {
 	int n;
-	char cha;
 
 	for (n = 0; n < 10; n++)
 {
