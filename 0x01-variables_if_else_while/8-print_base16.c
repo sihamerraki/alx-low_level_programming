@@ -6,15 +6,17 @@
  */
 int main(void)
 {
+
+	int n;
 	char cha;
 
-	for (n = 48; n < 58; n++)
+	for (n = 0; n < 9; n++)
 	{
-		putchar(n);
+		putchar(n + '0');
 	}
 	for (cha = 'a'; cha <= 'f'; cha++)
 	{
-		putchar(ch);
+		putchar(cha);
 	}
 	putchar('\n');
 	return (0);
