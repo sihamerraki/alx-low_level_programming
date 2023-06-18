@@ -2,7 +2,7 @@
 /**
  * main - prints all single digit numbers of base 10 starting from 0
  *
- * Return: 0 if success
+ * Return: always 0
  */
 int main(void)
 {
@@ -10,7 +10,7 @@ int main(void)
 
 	for (n = 33; n < 43; n++)
 	{
-		putchar(n);
+		putchar((char)n);
 	}
 	putchar('\n');
 	return (0);
