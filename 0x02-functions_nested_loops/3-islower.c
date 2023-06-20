@@ -4,6 +4,7 @@
 /**
  * _islower-  checks for lowerse character
  * Return: 1 lowercase, 0 otherwise
+ * @c: character
  */
 
 
