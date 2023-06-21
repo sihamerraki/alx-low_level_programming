@@ -2,6 +2,7 @@
 
 /**
  *
+ *
  * _isalpha - check the character.
  * @c: character
  * Return: 1 for alphabet and 0 for anything else
