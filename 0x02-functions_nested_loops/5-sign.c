@@ -2,10 +2,9 @@
 
 
 /**
- *
  * print_sign(int n) - prints the of a number
  * @n: number
- * Return: 1 for positive, -1 for négative, 0 anything else
+ * Return: 1 for positive, -1 for negative, 0 anything else
  *
  *
  */
