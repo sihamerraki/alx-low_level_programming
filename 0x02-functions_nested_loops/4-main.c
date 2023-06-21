@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * main - check the code.
  *
- * Return: Always 0.
+ * _isalpha - check the character.
+ *
+ *@p: character
+ * Return: 1 for alphabet and 0 for anything else
+ *
+ *
  */
-int main(void)
-{
-    int r;
 
-    r = _isalpha('H');
-    _putchar(r + '0');
-    r = _isalpha('o');
-    _putchar(r + '0');
-    r = _isalpha(108);
-    _putchar(r + '0');
-    r = _isalpha(';');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
+int _islpha(int p)
+{
+        if ((p >= 65 && p <= 97) || (p >= 97 && p <= 122))
+        {
+                return (1);
+        }
+        return (0);
 }
