@@ -2,14 +2,14 @@
 
 /**
  * _islower-  checks for lowerse character
- * @p: check character
+ * @c: check character
  * Return: 1 lowercase, 0 otherwise
  */
 
 
-int _islower(int p)
+int _islower(int c)
 {
-	if (p >= 97 && p <= 122)
+	if (c >= 97 && c <= 122)
 	{
 		return (1);
 	}

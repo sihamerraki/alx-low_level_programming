@@ -10,9 +10,9 @@
  *
  */
 
-int _islpha(int p)
+int _islpha(int c)
 {
-        if ((p >= 65 && p <= 97) || (p >= 97 && p <= 122))
+        if ((c >= 65 && c <= 97) || (c >= 97 && c <= 122))
         {
                 return (1);
         }
