@@ -4,15 +4,15 @@
  *
  * _isalpha - check the character.
  *
- *@e: character
+ *@p: character
  * Return: 1 for alphabet and 0 for anything else
  *
  *
  */
 
-int _islpha(int e)
+int _islpha(int p)
 {
-	if ((e >= 65 && e <= 97) || (e >= 97 && e <= 122))
+	if ((p >= 65 && e <= 97) || (p >= 97 && p <= 122))
 	{
 		return (1);
 	}
