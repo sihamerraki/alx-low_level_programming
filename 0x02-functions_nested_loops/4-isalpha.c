@@ -3,14 +3,13 @@
 /**
  *
  * _isalpha - check the character.
- *
- *@p: character
+ * @c: character
  * Return: 1 for alphabet and 0 for anything else
  *
  *
  */
 
-int _islpha(int c)
+int _isalpha(int c)
 {
         if ((c >= 65 && c <= 97) || (c >= 97 && c <= 122))
         {
