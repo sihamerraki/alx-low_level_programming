@@ -1,13 +1,13 @@
-#include"main.h"
+#include "main.h"
 /**
  * _isupper - check
- * @l, number
+ * @l:  number
  * Return: 1 for upper letter or 0 for any else
  */
 
-int_isupper(int x)
+int_isupper(int l)
 {
-        if (x >= 65 && x <=90)
+        if (l >= 65 && l <=90)
         {
                 return (1);
         }
