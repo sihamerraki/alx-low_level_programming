@@ -1,6 +1,5 @@
 #ifndef MAIN_H
-#define main_h
-#include <main.h>
+#define MAIN.H
 #include <stdion.h>
 #include <unistd.h>
 int _putchar(char c);
