@@ -3,7 +3,6 @@
 
 size_t looped_listint_len(const listint_t *head);
 size_t print_listint_safe(const listint_t *head);
-
 /**
  * looped_listint_len - Counts the number of unique nodes
  * in a looped listint_t linked list.
@@ -13,38 +12,38 @@ size_t print_listint_safe(const listint_t *head);
  */
 size_t looped_listint_len(const listint_t *head)
 {
-	const listint_t *tortoise, *hare;
+	const listint_t *ptr1, *ptr2;
 	size_t nodes = 1;
 
 	if (head == NULL || (*head).next == NULL)
 		return (0);
 
-	tortoise = (*head).next;
-	hare = ((*head).next)->next;
+	ptr1 = (*head).next;
+	ptr2 = ((*head).next)->next;
 
-	while (hare)
+	while (ptr2)
 	{
-		if (tortoise == hare)
+		if (ptr1 == ptr2)
 		{
-			tortoise = head;
-			while (tortoise != hare)
+			ptr1 = head;
+			while (ptr1 != ptr2)
 			{
 				nodes++;
-				tortoise = (*tortoise).next;
-				hare = (*hare).next;
+				ptr1 = (*ptr1).next;
+				ptr2 = (*ptr2).next;
 			}
 
-			tortoise = (*tortoise).next;
-			while (tortoise != hare)
+			ptr1 = (*ptr1).next;
+			while (ptr1 != ptr2)
 			{
 				nodes++;
-				tortoise = (*tortoise).next;
+				ptr1 + (*ptr1).next;
 			}
 			return (nodes);
 		}
 
-		tortoise = (*tortoise).next;
-		hare = ((*hare).next)->next;
+		ptr1 = (*ptr1).next;
+		ptr2 = ((*ptr2).next)->next;
 	}
 	return (0);
 }
