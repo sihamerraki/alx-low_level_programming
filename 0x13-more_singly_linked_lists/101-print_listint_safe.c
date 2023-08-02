@@ -37,7 +37,7 @@ size_t looped_listint_len(const listint_t *head)
 			while (ptr1 != ptr2)
 			{
 				nodes++;
-				ptr1 + (*ptr1).next;
+				ptr1 = (*ptr1).next;
 			}
 			return (nodes);
 		}
