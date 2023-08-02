@@ -8,24 +8,24 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *slow = head;
-	listint_t *fast = head;
+	listint_t *ptr1 = head;
+	listint_t *ptr2 = head;
 
 	if (!head)
 		return (NULL);
-	while (slow && fast && (*fast).next)
+	while (ptr1 && ptr2 && (*ptr2).next)
 	{
-		fast = (*fast).next->next;
-		slow = (*slow).next;
-		if (fast == slow)
+		ptr2 = (*ptr2).next->next;
+		ptr1 = (*ptr1).next;
+		if (ptr2 == ptr1)
 		{
-			slow = head;
-			while (slow != fast)
+			ptr1 = head;
+			while (ptr1 != ptr2)
 			{
-				slow = (*slow).next;
-				fast = (*fast).next;
+				ptr1 = (*ptr1).next;
+				ptr2 = (*ptr2).next;
 			}
-			return (fast);
+			return (ptr2);
 		}
 	}
 
