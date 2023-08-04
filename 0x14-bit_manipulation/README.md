@@ -1,1 +1,1 @@
-0x14. C - Bit ManipULATION
+0x14. C - Bit Manipulation
