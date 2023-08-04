@@ -6,18 +6,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-    if (!b)
-        return 0;
-
     unsigned int dec_val = 0;
 
-    while (*b)
+    if (!b)
+        return 0;
+    for (int index = 0; b[index]; index++)
     {
-        if (*b < '0' || *b > '1')
+        if (b[index] < '0' || b[index] > '1')
             return 0;
-        
-        dec_val = (dec_val << 1) | (*b - '0');
-        b++;
+        dec_val = 2 * dec_val + (b[index] - '0');
     }
     return dec_val;
 }
