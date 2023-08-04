@@ -19,4 +19,5 @@ unsigned int binary_to_uint(const char *b)
         dec_val = (dec_val << 1) | (*b - '0');
         b++;
     }
+    return dec_val;
 }
