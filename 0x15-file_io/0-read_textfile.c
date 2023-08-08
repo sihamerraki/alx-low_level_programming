@@ -31,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	let = read(flled, text, letters);
 	w = write(STDOUT_FILENO, text, let);
-	buf = malloc(sizeof(char) * letters);
+	
 	close(fd);
 	return (w);
 }
