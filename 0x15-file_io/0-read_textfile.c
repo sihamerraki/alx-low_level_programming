@@ -12,16 +12,26 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    if (filename == NULL)
-        return 0;
-    FILE *fp = fopen(filename, "r");
-    if (fp == NULL)
-        return 0;
-    char buf[letters + 1];
-    ssize_t nread = fread(buf, sizeof(char), letters, fp);
-    buf[nread] = '\0';
-    ssize_t nwritten = write(STDOUT_FILENO, buf, nread);
-    if (nwritten != nread)
-        return 0;
-    fclose(fp);
+    ssize_t fd, let, w;
+    char *text;
+
+	text = malloc(letters);
+	if (text == NULL)
+		return (0);
+
+	if (filename == NULL)
+		return (0);
+
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+	{
+		free(text);
+		return (0);
+	}
+
+	let = read(fd, text, letters);
+	w = write(STDOUT_FILENO, text, let);
+
+	close(fd);
+	return (w);
 }
